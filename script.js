@@ -32,7 +32,7 @@ document.getElementById("card-box").addEventListener("click", function (e) {
     const mobile = phoneBtn.parentNode.parentNode.children[3].innerText;
     console.log(mobile);
 
-      alert("Calling "+title+". Mobile: "+mobile);
+    alert("Calling " + title + ". 📞 " + mobile);
     const newCall = document.createElement("div");
     const history = document.getElementById("history-container");
 
@@ -53,4 +53,19 @@ document.getElementById("card-box").addEventListener("click", function (e) {
 document.getElementById("clear").addEventListener("click", function () {
   const history = document.getElementById("history-container");
   history.innerHTML = "";
+});
+
+// copy button
+
+document.getElementById("card-box").addEventListener("click", function (e) {
+  const copyBtn = e.target.closest(".copy-button");
+
+  if (copyBtn) {
+    const text = copyBtn.parentNode.parentNode.children[3].innerText;
+
+    navigator.clipboard.writeText(text);
+    const copy = document.getElementById("copy-count").innerText;
+    document.getElementById("copy-count").innerText = Number(copy) + 1;
+    alert(text + " copied to clipboard.");
+  }
 });
