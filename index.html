@@ -18,19 +18,19 @@
     <body class="hind-madurai">
         <header>
             <!-- navbar -->
-            <div class="navbar-container flex justify-between w-11/12 mx-auto p-3">
+            <div class="navbar-container flex justify-between w-11/12 mx-auto p-1 md:p-3">
                 <div class="left flex gap-2 items-center">
-                    <img src="./assets/logo.png" class="w-[50px]" alt="">
-                    <h1 class="text-[#02712a] font-extrabold text-[18px]">
+                    <img src="./assets/logo.png" class="w-[30px] md:w-[50px]" alt="">
+                    <h1 class="text-[#02712a] font-bold md:font-extrabold md:text-[18px]">
                         Emergency
                         <br>
                         Service
                     </h1>
                 </div>
-                <div class="right flex items-center gap-3">
+                <div class="right flex items-center gap-1 md:gap-3">
                     <!-- heart -->
                     <div>
-                        <p class="flex justify-center w-[123px] h-[52px] p-3 rounded-[50px] gap-[10px] items-center bg-[#41FF6B1A]">
+                        <p class="flex justify-center w-[65px] h-[30px] md:w-[123px] md:h-[52px] p-3 rounded-[50px] gap-[10px] items-center bg-[#41FF6B1A]">
                             <span id="heart-count" class="font-bold"> 0</span>
                             <span>
                                 <img src="./assets/heart.png" class="w-[30px]" alt="">
@@ -39,7 +39,7 @@
                     </div>
                     <!-- coin  -->
                     <div>
-                        <p class="flex justify-center w-[123px] h-[52px] p-3 rounded-[50px] gap-[10px] items-center bg-[#41FF6B1A]">
+                        <p class="flex justify-center w-[65px] h-[30px] md:w-[123px] md:h-[52px] p-3 rounded-[50px] gap-[10px] items-center bg-[#41FF6B1A]">
                             <span id="coin-count" class="font-bold">100</span>
                             <span>
                                 <img src="./assets/coin.png" class="w-[24px]" alt="">
@@ -48,7 +48,7 @@
                     </div>
                     <!-- copy -->
                     <div>
-                        <p class="flex justify-center w-[123px] h-[52px] p-3 rounded-[50px] gap-[10px] items-center bg-[#00A63E] text-white">
+                        <p class="flex justify-center w-[65px] h-[30px] md:w-[123px] md:h-[52px] p-3 rounded-[50px] gap-[10px] items-center bg-[#00A63E] text-white">
                             <span id="copy-count">0</span>
                             <span id="copy">Copy</span>
                         </p>
@@ -59,21 +59,21 @@
             <section class="Banner">
                 <div class="banner-container bg-gradient-to-r from-[rgb(1,49,35)] via-[rgb(0,103,71)] to-[rgb(1,50,35)] flex flex-col items-center justify-center p-5">
                     <img src="./assets/logo-dark.png" class="w-[92px]" alt="">
-                    <h1 class="font-bold text-[40px] text-white">
+                    <h1 class="font-bold text-[25px] md:text-[40px] text-white">
                         Emergency Service Directory
                     </h1>
-                    <p class="text-[20px] font-600 text-white">
+                    <p class="text-[14px] md:text-[20px] font-600 text-white text-center md:text-left">
                         Government Emergency Services at Your Fingertip – A Project by
             Government of the People’s Republic of Bangladesh
                     </p>
                 </div>
             </section>
         </header>
-        <main class="bg-[#41FF6B1A]">
+        <main class="bg-[#41FF6B1A] pb-14">
             <!-- main section -->
-            <section id="card-container" class="w-11/12 mx-auto grid grid-cols-12 gap-8 pt-12">
-                <section id="card-box" class="col-span-9">
-                    <div class="cards grid grid-cols-3 gap-5">
+            <section id="card-container" class="w-11/12 mx-auto md:grid grid-cols-12 gap-8 pt-12">
+                <section id="card-box" class="md:col-span-9">
+                    <div class="cards grid  md:grid-cols-3 gap-5">
                         <!-- card 1 -->
                         <div class="card p-5 bg-white shadow-[0_2px_3px_0_rgba(0,0,0,0.15)]">
                             <div class="flex justify-between items-center">
@@ -337,8 +337,15 @@
                         </div>
                     </div>
                 </section>
-                <aside id="history-box" class="shadow-[0_2px_3px_0_rgba(0,0,0,0.15)] bg-white col-span-3 rounded-xl p-5">
-                    
+                <aside id="history-box" class="shadow-[0_2px_3px_0_rgba(0,0,0,0.15)] bg-white md:col-span-3 rounded-xl p-5 mt-5 md:mt-0">
+                    <div class="history-head flex justify-between items-center">
+                        <h1 class="font-bold"><i class="fa-regular fa-clock"></i> Call History</h1>
+                        <button id="clear" class="w-[120px] h-[40px] bg-[#00A63E] text-white rounded-4xl">Clear</button>
+                    </div>
+
+                    <div class="history-container">
+
+                    </div>
                 </aside>
             </section>
         </main>
