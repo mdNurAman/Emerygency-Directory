@@ -69,3 +69,6 @@ document.getElementById("card-box").addEventListener("click", function (e) {
     alert(text + " copied to clipboard.");
   }
 });
+
+
+//Done
